@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accordion FAQ Section</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+  <div class="w-3/4 max-w-2xl bg-white shadow-lg rounded-lg p-6">
+    <h1 class="text-2xl font-bold mb-4 text-gray-800">FAQ Section</h1>
+    <div id="faq" class="space-y-4">
+      <!-- FAQ Items go here -->
+      <div class="border rounded-lg">
+        <button 
+          class="w-full text-left p-4 bg-gray-200 hover:bg-gray-300 focus:outline-none font-medium"
+          data-faq-toggle>
+          What is the purpose of this FAQ section?
+        </button>
+        <div class="p-4 text-gray-700 hidden" data-faq-content>
+          <!-- Answer -->
+        </div>
+      </div>
+      <!-- Add more FAQ items as needed -->
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
